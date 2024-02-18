@@ -1,0 +1,67 @@
+@page
+@model CrudTest2.Pages_Servico.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Servico</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Servico.Id" />
+            <div class="form-group">
+                <label asp-for="Servico.Name" class="control-label"></label>
+                <input asp-for="Servico.Name" class="form-control" />
+                <span asp-validation-for="Servico.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Servico.Description" class="control-label"></label>
+                <input asp-for="Servico.Description" class="form-control" />
+                <span asp-validation-for="Servico.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Servico.Number" class="control-label"></label>
+                <input asp-for="Servico.Number" class="form-control" />
+                <span asp-validation-for="Servico.Number" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Servico.Category" class="control-label"></label>
+                <input asp-for="Servico.Category" class="form-control" />
+                <span asp-validation-for="Servico.Category" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Servico.ImagePaths" class="control-label"></label>
+                <input asp-for="Servico.ImagePaths" class="form-control" />
+                <span asp-validation-for="Servico.ImagePaths" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Servico.Email" class="control-label"></label>
+                <input asp-for="Servico.Email" class="form-control" />
+                <span asp-validation-for="Servico.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Servico.StartDate" class="control-label"></label>
+                <input asp-for="Servico.StartDate" class="form-control" />
+                <span asp-validation-for="Servico.StartDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Servico.EndDate" class="control-label"></label>
+                <input asp-for="Servico.EndDate" class="form-control" />
+                <span asp-validation-for="Servico.EndDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
